@@ -1,0 +1,17 @@
+footer {
+    background-color: black;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.social_icon {
+    margin: 20px 10px;
+    color:#45BF55;
+}
+
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-top: 24px;
+}

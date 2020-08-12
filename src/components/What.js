@@ -1,11 +1,18 @@
 import React from 'react'
+import {Container} from 'react-bootstrap'
+import '../css/what.css'
 
 
 const What = () => {
     return (
-        <div>
-            <p>What</p>
-        </div>
+        <section>
+            
+                
+           
+            
+
+
+        </section>
     )
 }
 

@@ -1,0 +1,37 @@
+.features{
+    background-color: white;
+    text-align: center;
+    padding: 6% 5%;
+    border-top: solid 6px black;
+    border-bottom: solid 6px black;
+}
+
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+.feat-icon {
+    padding: 5% 0px;
+    color:#45BF55;
+}
+
+.box {
+    border: solid 10px #194D33;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 1000px;
+    background-color: #194D33;
+   
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: gray;
+}
