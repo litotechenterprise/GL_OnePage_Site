@@ -13,3 +13,64 @@ h1 {
 .title_container {
     padding: 8% 10%;
 }
+
+
+
+.chart {
+    text-align: center;
+}
+
+.heading {
+    padding-bottom: 5%;
+}
+
+.post_container, .feed_container {
+    background-color: white;
+    border: 8px solid #00261C;
+    border-radius: 0%;
+    box-shadow: 10px 10px 5px black;
+    
+}
+
+.heading {
+    padding-top: 10%;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 1px;
+    color: Black;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.feed-list, .post_list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.point {
+    padding: 6% 0%;
+   
+}
+
+
+li div {
+
+}
+
+.List_head {
+    text-align: left;
+    padding-left: 40%;
+    padding-top: 25%;
+    font-size: 2.3rem;
+    font-family:'lobster';
+    font-weight: 600;
+}
+
+.List_dir {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+.list_icon {
+  
+    color: #194D33;
+}

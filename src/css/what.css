@@ -1,18 +1,15 @@
-section {
-    background: #194D33;
-}
-
-.title_container {
-    padding: 5% 10%;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.what_is_description {
+    padding: 5% 8%;
 }
 
 
-.company_name {
-    font-family: 'Lobster', cursive;;
+.what_is_it {
+    font-size: 3.5rem;
+    text-align: center;
 }
 
+.What_Description {
+    margin-top: 5%;
+    color: white;
+    
+}

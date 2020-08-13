@@ -1,14 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Nav, Navbar, Container, Row, Col, Image, Button} from 'react-bootstrap'
 import How from './components/How'
 import Features from './components/features'
 import When from './components/When'
+import What from './components/What'
 import Iphone from './assets/images/Iphone.png'
 import Footer from './components/Footer'
 import CityBK from './assets/images/city52.png'
 import './css/Main.css'
 
 const App = () => {
+    const [what, setWhat] = useState(false)
+    const [how, setHow] = useState(false)
+    const [when, setWhen] = useState(false)
+
+
     return(
         <div>
             <Navbar className="Navbar" collapseOnSelect expand="lg" variant='dark'  style={{color:''}}>
@@ -17,30 +23,19 @@ const App = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto"></Nav>
                     <Nav className="justify-content-end, Nav-btns" >
-                        <Nav.Link className="Nav-btn" eventKey={2} href="#what" onMouseEnter={(e) => console.log(e)}>What</Nav.Link>
-                        <Nav.Link className="Nav-btn" eventKey={3} href="#why" style={{color: 'White'}}>How</Nav.Link>
-                        <Nav.Link className="Nav-btn" eventKey={4} href="#when" style={{color: 'White'}}>When</Nav.Link>
+                        <Nav.Link className="Nav-btn" eventKey={2} href="#what"  style={what ? { color:'white', fontFamily:'Montserrat',fontWeight:'bold'}:{color:'white', fontFamily:'Montserrat'}} onMouseEnter={() => setWhat(true)} onMouseLeave={() => setWhat(false)}>What</Nav.Link>
+                        <Nav.Link className="Nav-btn" eventKey={3} href="#how" style={how ? { color:'white', fontFamily:'Montserrat',fontWeight:'bold'}:{color:'white', fontFamily:'Montserrat'}} onMouseEnter={() => setHow(true)} onMouseLeave={() => setHow(false)} >How</Nav.Link>
+                        <Nav.Link className="Nav-btn" eventKey={4} href="#when" style={when ? { color:'white', fontFamily:'Montserrat', fontWeight:'900'}:{color:'white', fontFamily:'Montserrat'}} onMouseEnter={() => setWhen(true)} onMouseLeave={() => setWhen(false)}>When</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-
-            
 
             <section>
                 {/* <img className='city' src={CityBK} /> */}
                 <div className='Hook'>
                     <Row>
                         <Col lg='6'>
-                            <h1 className="hook_title">...Bored af ? See what events happening right now near you</h1>
-                            <Row style={{width:'100%', textAlign:'center', padding:'7% 0%'}}>
-                                <Col>
-                                    <button type="button" class="btn btn-dark btn-lg download-btn"> <i class="fab fa-apple"></i> App Store</button>
-                                </Col>
-
-                                <Col>
-                                    <button type="button"class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i> Google Play Store</button>
-                                </Col>
-                            </Row>
+                            <h1 className="hook_title">...Bored af ? See what's goin down near you.</h1>
                         </Col>
                         <Col lg='6' style={{}}>
                             <img src={Iphone} className="Image"/>
@@ -50,7 +45,8 @@ const App = () => {
             </section>
 
             <Features />
-            {/* <How /> */}
+            <What />
+            <How />
             <When />
             <Footer/>
         </div>

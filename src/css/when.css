@@ -1,14 +1,14 @@
 .hook {
-    /* width: 100%;
-    height: auto; */
-  
-    /* background-color: #194D33; */
+    width: 100%;
+    height: auto;
+    background-color: #194D33;
 }
 
 .download-btn {
     width: 250px;
 }
 
-h1 {
+.coming {
+    font-size: 3rem;
     text-align: center;
 }

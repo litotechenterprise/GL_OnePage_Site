@@ -6,9 +6,8 @@ const When = () => {
     return (
        <section>
            <div className='Hook'>
-               
-               <Container style={{width:"50"}}>
-                    <h1>Coming soon to....</h1>
+               <Container style={{width:"50%"}}>
+                    <h1 className="coming">Coming soon to....</h1>
                     <Row style={{}}>
                         <Col lg='6'>
                             <button type="button" class="btn btn-dark btn-lg download-btn"> <i class="fab fa-apple"></i> App Store</button>
@@ -18,7 +17,6 @@ const When = () => {
                             <button type="button"class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i> Google Play Store</button>
                         </Col>
                     </Row>
-                   
                </Container>
                
            </div>
