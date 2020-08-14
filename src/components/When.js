@@ -7,7 +7,7 @@ const When = () => {
        <section>
            <div className='Hook'>
                <Container style={{width:"50%"}}>
-                    <h1 className="coming">Coming soon to....</h1>
+                    <h1 className="coming" style={{fontFamily:'Montserrat'}}>Coming soon to....</h1>
                     <Row style={{}}>
                         <Col lg='6'>
                             <button type="button" class="btn btn-dark btn-lg download-btn"> <i class="fab fa-apple"></i> App Store</button>
